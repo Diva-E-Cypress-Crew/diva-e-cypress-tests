@@ -9,8 +9,7 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
     "stepDefinitions": [
-      "cypress/e2e/common/steps/*.ts",
-      "cypress/e2e/common/**/*.ts"
+      "cypress/e2e/**/*.ts"
     ],
     "cucumberJson": {
       "generate": true,
