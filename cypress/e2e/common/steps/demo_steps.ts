@@ -1,7 +1,7 @@
 import {Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
 import {
     selAnlegen, selEndbetrag, selAnlagebetragInput, selEndbetragLabel, selEndbetragValue
-} from "../selectors/investmentrechner_selectors";
+} from "../selectors/demo_selectors";
 
 Given('the Customer is on the homepage', () => {
     cy.visit('/')
