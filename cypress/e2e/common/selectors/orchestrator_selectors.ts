@@ -1,4 +1,7 @@
-export const homePage = () => cy.get('https://duckduckgo.com');
-
-export const searchBox = () => cy.get('#rrb-input');
-export const switchToDuckDuckGoText = () => cy.get('span:contains("Switch to DuckDuckGo.")');
+export const visitHomepage = () => cy.visit('/');
+export const clickLabel    = (label: string) => cy.contains(String(label)).click({ force: true });
+export const getLabel      = (label: string) => cy.contains(String(label));
+export const selAnlegen = () =>
+  cy.contains('Anlegen');
+export const selWasMochtenSieBerechnen = () =>
+  cy.contains('Was möchten Sie berechnen?');
