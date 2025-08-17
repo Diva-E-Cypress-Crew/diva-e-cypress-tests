@@ -29,7 +29,8 @@ module.exports = defineConfig({
             return config
         },
         // baseUrl: 'https://ronnybetatester.4lima.de/',
-        baseUrl: 'https://meag.gitlab.diva-e.com/investmentrechner-2023',
+        // baseUrl: 'https://meag.gitlab.diva-e.com/investmentrechner-2023',
+        baseUrl: 'https://duckduckgo.com/',
         specPattern: '**/*.{feature,features}',
     },
     env: {
