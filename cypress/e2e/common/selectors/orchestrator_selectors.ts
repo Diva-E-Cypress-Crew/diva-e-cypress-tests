@@ -29,15 +29,19 @@ export function visitHomepage() {
 }
 
 export function browserName() {
-  return cy.get('text=Benutze unsere Homepage, die nie solche Nachrichten anzeigt');
+  return cy.get('DuckDuckGo');
 }
 
 export function startLink() {
-  return cy.get('#startLink');
+  return cy.get('#start-link');
 }
 
-export function cookiePolicyLink() {
-  return cy.get('#cookie-policy-link');
+export function homepageLink() {
+  return cy.get('#homepage-link');
+}
+
+export function aboutLink() {
+  return cy.get('#about-link');
 }
 
 export function privacyPolicyLink() {
@@ -47,14 +51,3 @@ export function privacyPolicyLink() {
 export function termsOfServiceLink() {
   return cy.get('#terms-of-service-link');
 }
-
-export function aboutUsLink() {
-  return cy.get('#about-us-link');
-}
-
-export function contactUsLink() {
-  return cy.get('#contact-us-link');
-}
-
-export function searchButton() {
-  return cy.get('button[type="submit"]');
