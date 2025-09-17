@@ -1,22 +1,18 @@
-import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import * as sel from '../selectors/orchestrator_selectors';
 
-Given("the Customer is on the homepage", () => {
+Given("I am on the homepage", () => {
   cy.visit('/');
 });
 
-When("he clicks Vorlesungsverzeichnis", () => {
-  sel.clickLabel('Vorlesungsverzeichnis');
+Then("I should see the text Switch to DuckDuckGo.", () => {
+  sel.getLabel('Switch to DuckDuckGo').should('be.visible');
 });
 
-Then("Fremdsprachen should be displayed", () => {
-  sel.getLabel('Fremdsprachen').should('be.visible');
+When("I click Set As Default Search", () => {
+  sel.clickLabel('Set As Default Search');
 });
 
-When("he clicks Fremdsprachen", () => {
-  sel.clickLabel('Fremdsprachen');
-});
-
-Then("Japanisch should be shown", () => {
-  sel.getLabel('Japanisch').should('be.visible');
+Then("the text Make DuckDuckGo your default search engine should be displayed", () => {
+  sel.getHeading('Make DuckDuckGo your default search engine').should('be.visible');
 });

@@ -28,7 +28,7 @@ module.exports = defineConfig({
 
             return config
         },
-        baseUrl: 'https://lsf.htw-berlin.de/qisserver/rds?state=user&type=0&topitem=&breadCrumbSource=&topitem=functions',
+        baseUrl: 'https://duckduckgo.com/',
         specPattern: '**/*.{feature,features}',
     },
     env: {

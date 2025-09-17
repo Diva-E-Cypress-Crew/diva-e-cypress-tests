@@ -1,11 +1,11 @@
-# url: https://lsf.htw-berlin.de/qisserver/rds?state=user&type=0&topitem=&breadCrumbSource=&topitem=functions
+# url: https://duckduckgo.com/
 
-Feature: LSF
-  As a user I want to open LSF and sign up for a japanese course
+Feature: DuckDuckGo
+  As a user 
+  I want to open DuckDuckGo and use the search bar
 
-  Scenario: Anmelden
-    Given the Customer is on the homepage
-    When  he clicks Vorlesungsverzeichnis
-    Then  Fremdsprachen should be displayed
-    When he clicks Fremdsprachen
-    Then Japanisch should be shown
+  Scenario: visiting the frontpage
+    Given I am on the homepage
+    Then I should see the text Switch to DuckDuckGo.
+    When I click Set As Default Search
+    Then the text Make DuckDuckGo your default search engine should be displayed
