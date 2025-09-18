@@ -1,11 +1,8 @@
-# url: https://duckduckgo.com/
+# url: https://meag.gitlab.diva-e.com/investmentrechner-2023
 
-Feature: DuckDuckGo
-  As a user 
-  I want to open DuckDuckGo and use the search bar
+Feature: MEAG Investmentrechner – Button-Klick (minimal)
 
-  Scenario: visiting the frontpage
-    Given I am on the homepage
-    Then I should see the text Switch to DuckDuckGo.
-    When I click Set As Default Search
-    Then the text Make DuckDuckGo your default search engine should be displayed
+  Scenario: Klick auf "Anlegen"-Tile
+    Given the Customer is on the homepage
+    When  he clicks the "Anlegen" button
+    Then  the "Was möchten Sie berechnen?" title should be displayed

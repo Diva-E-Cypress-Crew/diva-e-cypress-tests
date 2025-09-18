@@ -1,18 +1,14 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 import * as sel from '../selectors/orchestrator_selectors';
 
-Given("I am on the homepage", () => {
-  cy.visit('/');
+Given("the Customer is on the homepage", () => {
+  return sel.visitHomepage();
 });
 
-Then("I should see the text Switch to DuckDuckGo.", () => {
-  sel.getLabel('Switch to DuckDuckGo').should('be.visible');
+When("he clicks the \"Anlegen\" button", () => {
+  return sel.clickLabel('Anlegen');
 });
 
-When("I click Set As Default Search", () => {
-  sel.clickLabel('Set As Default Search');
-});
-
-Then("the text Make DuckDuckGo your default search engine should be displayed", () => {
-  sel.getHeading('Make DuckDuckGo your default search engine').should('be.visible');
+Then("the \"Was möchten Sie berechnen?\" title should be displayed", () => {
+  return sel.getHeading('Was möchten Sie berechnen?').should('be.visible');
 });

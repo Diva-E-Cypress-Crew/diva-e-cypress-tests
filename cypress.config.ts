@@ -28,7 +28,7 @@ module.exports = defineConfig({
 
             return config
         },
-        baseUrl: 'https://duckduckgo.com/',
+        baseUrl: 'https://meag.gitlab.diva-e.com/investmentrechner-2023',
         specPattern: '**/*.{feature,features}',
     },
     env: {
